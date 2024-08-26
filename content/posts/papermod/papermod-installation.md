@@ -1,6 +1,6 @@
 ---
-title: "Install / Update PaperMod"
-summary: Read aboout Install and Update instructions and sampled configuration templates
+title: "Места силы. О паломничестве"
+summary: Монахиня Лакшита Гири о паломничестве
 date: 2021-01-20
 series: ["PaperMod"]
 weight: 1

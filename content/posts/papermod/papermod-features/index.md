@@ -1,6 +1,6 @@
 ---
-title: "Features / Mods"
-summary: Learn About All Features in PaperMod
+title: "Насущные вопросы"
+summary: 🔸 Что самое главное в жизни 🔸 В чем отличия между путем йога и йогини 🔸 Как всегда приходить к желаемому 🔸 О подлинном сострадании...
 date: 2021-01-20
 weight: 2
 aliases: ["/papermod-features"]
@@ -10,7 +10,7 @@ author: ["Aditya Telange"]
 
 ### Intro
 
-- **We'll be using `yml/yaml` format for all examples down below, I recommend using `yml` over `toml` as it is easier to read.**
+- **🔸Что самое главное в жизни 🔸 В чем отличия между путем йога и йогини 🔸 Как всегда приходить к желаемому 🔸 О подлинном сострадании...**
 
 - You can find any [YML to TOML](https://www.google.com/search?q=yml+to+toml) converters if necessary.
 
