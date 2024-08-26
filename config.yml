@@ -1,7 +1,7 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://lakshita.advayta.org"
-title: Lakshita blog
+title: Шива Шакти Марга
 copyright: "© [Lakshita blog Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 paginate: 5
 theme: [papermod]
@@ -71,7 +71,7 @@ languages:
       languageAltTitle: French
       profileMode:
         enabled: true
-        title: Lakshita blog
+        title: Шива Шакти Марга
         imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
         imageTitle: ProfileMode image
         # imageWidth: 120
@@ -110,8 +110,8 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme Lakshita blog - https://github.com/adityatelange/hugo-PaperMod"
-  author: Theme Lakshita blog
+  description: "Шива Шакти Марга єто единое пространство для духовных искателей. Тут вы обретете понимание, как продвигаться на пути йоги. "
+  author: Шива Шакти Марга
   # author: ["Me", "You"] # multiple authors
 
   defaultTheme: light
@@ -132,7 +132,7 @@ params:
 
   profileMode:
     enabled: false
-    title: Lakshita blog
+    title: Шива Шакти Марга
     imageUrl: "#"
     imageTitle: my image
     # imageWidth: 120
@@ -144,14 +144,14 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "Lakshita blog"
+    Title: "Лакшита Гири о йоге"
     Content: >
-      👋 **Монахиня Лакшита Гири**
+      👋 **ОМ**
 
       - Психика человека с позиции философии йоги
 
       - Как научиться слышать свою интуицию?
-      
+
       - Методы для того, чтобы принимать интуитивные решения
 
   socialIcons:
