@@ -1,0 +1,6 @@
+public
+dist
+hugo_darwin
+hugo_linux
+temp/
+.hugo_build.lock
