@@ -29,8 +29,8 @@ languages:
       series: series
     menu:
       main:
-        - name: Archive
-          url: archives
+        - name: Events
+          url: events
           weight: 5
         - name: Search
           url: search/
