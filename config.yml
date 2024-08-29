@@ -32,14 +32,20 @@ languages:
         - name: Events
           url: events
           weight: 5
+        - name: Blog
+          url: blog
+          weight: 6
+        - name: Courses
+          url: courses
+          weight: 7
         - name: Search
           url: search/
           weight: 10
         - name: Tags
           url: tags/
           weight: 10
-        - name: WiKi
-          url: https://github.com/adityatelange/hugo-PaperMod/wiki/
+        # - name: WiKi
+        #  url: https://github.com/adityatelange/hugo-PaperMod/wiki/
 
   fr:
     languageName: ":fr:"
