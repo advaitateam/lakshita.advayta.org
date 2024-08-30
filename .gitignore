@@ -1,7 +1,9 @@
 .obsidian/*
+.DS_Store
 public
 dist
 hugo_darwin
 hugo_linux
 temp/
 .hugo_build.lock
+resources/_gen
