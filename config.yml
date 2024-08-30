@@ -4,7 +4,7 @@ baseURL: "https://lakshita.advayta.org"
 title: Шива Шакти Марга
 copyright: "© [Lakshita blog Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
 paginate: 5
-theme: [papermod]
+theme: [paper]
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -13,7 +13,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
+mainsections: ["posts", "paper"]
 
 minify:
   disableXML: true
@@ -50,7 +50,7 @@ languages:
   ru:
     languageName: ":ru:"
     weight: 2
-    title: PaperModL2
+    title: PaperL2
     taxonomies:
       category: FRcategories
       tag: FRtags
@@ -92,7 +92,7 @@ languages:
   fa:
     languagedirection: rtl
     weight: 3
-    title: PaperMod RTL
+    title: Paper RTL
     taxonomies:
       category: FAcategories
       tag: FAtags
