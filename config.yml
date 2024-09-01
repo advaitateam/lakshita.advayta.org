@@ -33,7 +33,7 @@ languages:
           url: events
           weight: 5
         - name: Blog
-          url: blog
+          url: posts
           weight: 6
         - name: Courses
           url: courses

@@ -1,3 +1,4 @@
 ---
 title: События
+layout: "archives"
 ---
