@@ -85,7 +85,7 @@ languages:
         subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
         buttons:
           - name: Blog
-            url: posts
+            url: /posts/
           - name: Profile Mode
             url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
 
