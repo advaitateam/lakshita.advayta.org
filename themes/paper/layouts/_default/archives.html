@@ -29,6 +29,16 @@
 
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 
+{{ range .Pages }}
+  <article class="post-entry tag-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">
+        {{- .Title }}
+      </h2>
+    </header>
+  </article>
+  {{ end }}
+
 {{- if site.Params.ShowAllPagesInArchive }}
 {{- $pages = site.RegularPages }}
 {{- end }}
