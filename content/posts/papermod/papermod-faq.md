@@ -1,11 +1,10 @@
 ---
 title: "FAQs / How To's Guide"
 summary: We'll try to answer frequently asked qestions by users.
-date: 2021-01-20
+date: 2021-01-21
 aliases: ["/papermod-how-to-guide"]
 tags: ["PaperMod", "Docs"]
 author: ["PaperMod Contributors"]
-draft: true
 aliases: [/posts/papermod/papermod-how-to]
 weight: 3
 ---
