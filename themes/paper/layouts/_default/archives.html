@@ -29,12 +29,14 @@
 
 {{- $pages := site.RegularPages }}
 
-{{- if site.Params.ShowAllPagesInArchive }}
-{{- $pages = site.RegularPages }}
+{{- range .Pages }}
+<h3 class="archive-entry-title entry-hint-parent">
+  {{- .Title | markdownify }}
+</h3>
 {{- end }}
 
+
 {{- range $pages.GroupByPublishDate "2006" }}
-{{- if ne .Key "0001" }}
 <div class="archive-year">
   {{- $year := replace .Key "0001" "" }}
   <h2 class="archive-year-header" id="{{ $year }}">
@@ -77,7 +79,6 @@
   </div>
   {{- end }}
 </div>
-{{- end }}
 {{- end }}
 
 {{- end }}{{/* end main */}}
