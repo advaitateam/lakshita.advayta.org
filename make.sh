@@ -16,17 +16,17 @@ lint)
 
 build)
   BRANCH_NAME=`git rev-parse --abbrev-ref HEAD`
-  hugo build --mode $BRANCH_NAME
+  hugo --mode $BRANCH_NAME
   ;;
 
 deploy-dev)
   BRANCH_NAME=`git rev-parse --abbrev-ref HEAD`
   SHORT_SHA=`git rev-parse --short HEAD`
   echo $BRANCH_NAME, $SHORT_SHA
-  SHORT_SHA=$SHORT_SHA BRANCH_NAME=$BRANCH_NAME yarn build --mode dev
-  cp -rf public/* dist/
+  SHORT_SHA=$SHORT_SHA BRANCH_NAME=$BRANCH_NAME hugo
+  cp -rf assets public/
   # yarn add --global wrangler
-  wrangler pages deploy dist --project-name="lakshita-advayta-org" --commit-dirty true --branch main --commit-hash $SHORT_SHA --commit-message $SHORT_SHA
+  wrangler pages deploy public --project-name="lakshita-advayta-org" --commit-dirty true --branch master --commit-hash $SHORT_SHA --commit-message $SHORT_SHA
   ;;
 
 
