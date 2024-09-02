@@ -29,7 +29,6 @@
 
 {{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
 
-{{ .Pages }}
 {{- if site.Params.ShowAllPagesInArchive }}
 {{- $pages = site.RegularPages }}
 {{- end }}
