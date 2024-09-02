@@ -1,42 +1,40 @@
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="entry-content">
-                    <header class="entry-header">
-                        <h1>{{ .Title | markdownify }}</h1>
-                    </header>
-                    <h3 style="margin: 10px" >{{ .Content | markdownify }}</h3>
-                    <!-- SendPulse Subscription Form -->
-                    <form novalidate="" class="sp-element-container ">
-                        <h5>Подпишитесь на обновления и будь в курсе.</h5>
-                        <div class="sp-field " sp-id="sp-719d8115-151f-442c-ac76-8d4ed5125327">
-                            <input type="email" sp-type="email" name="sform[email]" class="sp-form-control " placeholder="username@gmail.com" autocomplete="on" required="required">
-                            <button id="sp-f1e756c4-7377-4ec1-82bf-b290c30218ec" class="btn-primary">Подписаться</button>
-                        </div>
-                    </form>
-                    <!-- /SendPulse Subscription Form -->
-                </div>
-                <footer class="entry-footer">
-                    {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
-                </footer>
+    <div class="grid-x grid-padding-x">
+        <div class="cell small-6">
+            <div class="entry-content">
+                <header class="entry-header">
+                    <h1>{{ .Title | markdownify }}</h1>
+                </header>
+                <h3 style="margin: 10px" >{{ .Content | markdownify }}</h3>
+                <!-- SendPulse Subscription Form -->
+                <form novalidate="" class="sp-element-container ">
+                    <h5>Подпишитесь на обновления и будь в курсе.</h5>
+                    <div class="sp-field " sp-id="sp-719d8115-151f-442c-ac76-8d4ed5125327">
+                        <input type="email" sp-type="email" name="sform[email]" class="sp-form-control " placeholder="username@gmail.com" autocomplete="on" required="required">
+                        <button id="sp-f1e756c4-7377-4ec1-82bf-b290c30218ec" class="btn-primary">Подписаться</button>
+                    </div>
+                </form>
+                <!-- /SendPulse Subscription Form -->
+            </div>
+            <footer class="entry-footer">
+                {{ partial "social_icons.html" (dict "align" site.Params.homeInfoParams.AlignSocialIconsTo) }}
+            </footer>
 
-            </div>
-            <div class="col">
-                <article class="post-entry"> 
-                    <figure class="entry-cover"><img loading="lazy" src="https://github.com/user-attachments/assets/a43c9e6d-4631-40a3-9e13-22716b43922f" alt="">
-                    </figure>
-                      <header class="entry-header">
-                        <h2 class="entry-hint-parent">Усмирение беспокойного ума
-                        </h2>
-                      </header>
-                      <div class="entry-content">
-                        <p>🟡 28-го октября, с 9:00 до 12:00 по мск, состоится онлайн семинар на тему «Усмирение беспокойного ума».</p>
-                      </div>
-                      <a class="entry-link" aria-label="post link to Усмирение беспокойного ума" href="http://localhost:1313/events/2024/%D1%83%D1%81%D0%BC%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BA%D0%BE%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE-%D1%83%D0%BC%D0%B0/"></a>
-                </article>
-            </div>
+        </div>
+        <div class="cell small-6">
+            <article class="post-entry"> 
+                <figure class="entry-cover"><img loading="lazy" src="https://github.com/user-attachments/assets/a43c9e6d-4631-40a3-9e13-22716b43922f" alt="">
+                </figure>
+                    <header class="entry-header">
+                    <h2 class="entry-hint-parent">Усмирение беспокойного ума
+                    </h2>
+                    </header>
+                    <div class="entry-content">
+                    <p>🟡 28-го октября, с 9:00 до 12:00 по мск, состоится онлайн семинар на тему «Усмирение беспокойного ума».</p>
+                    </div>
+                    <a class="entry-link" aria-label="post link to Усмирение беспокойного ума" href="http://localhost:1313/events/2024/%D1%83%D1%81%D0%BC%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BA%D0%BE%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE-%D1%83%D0%BC%D0%B0/"></a>
+            </article>
         </div>
     </div>
 </article>
