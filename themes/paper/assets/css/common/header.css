@@ -80,6 +80,7 @@ body:not(.dark) #sun {
 .lang-switch {
     display: flex;
     flex-wrap: inherit;
+    margin-bottom: 0em;
 }
 
 .lang-switch a {

@@ -29,26 +29,26 @@ languages:
       series: series
     menu:
       main:
-        - name: Events
+        - name: События
           url: events
           weight: 5
-        - name: Blog
+        - name: Блог
           url: posts
           weight: 6
-        - name: Courses
+        - name: Курсы
           url: courses
           weight: 7
-        - name: Search
+        - name: Поиск
           url: search/
           weight: 10
         # - name: Tags
         #  url: tags/
         #  weight: 10
-        - name: WiKi
+        - name: Вики
           url: https://github.com/adityatelange/hugo-PaperMod/wiki/
 
-  en:
-    languageName: ":en:"
+  ru:
+    languageName: "En"
     weight: 2
     title: PaperL2
     taxonomies:
@@ -88,25 +88,6 @@ languages:
             url: /posts
           - name: Profile Mode
             url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-
-  fa:
-    languagedirection: rtl
-    weight: 3
-    title: Paper RTL
-    taxonomies:
-      category: FAcategories
-      tag: FAtags
-      series: FAseries
-    menu:
-      main:
-        - name: FATags
-          url: fatags
-          weight: 10
-    # custom params for each language should be under [langcode].parms - hugo v0.120.0
-    params:
-      homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to RTL layout
 
 outputs:
   home:
