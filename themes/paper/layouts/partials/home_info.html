@@ -12,7 +12,7 @@
                 <br />
                 <!-- SendPulse Subscription Form -->
                 <form novalidate="" class="sp-element-container ">
-                    <h5>Подпишитесь на обновления и будь в курсе.</h5>
+                    <h5>Подпишитесь на обновления и будь <small>(в курсе)</small>.</h5>
                     <div class="input-group">
                         <input class="input-group-field" type="email" name="sform[email]" class="sp-form-control " placeholder="username@gmail.com" autocomplete="on" required="required">
                         <div class="input-group-button">
@@ -26,14 +26,20 @@
 
         </div>
         <div class="cell small-6">
-            <article class="post-entry" style="background: transparent; border: none"> 
-                <figure class="entry-cover"><img loading="lazy" src="https://github.com/user-attachments/assets/a43c9e6d-4631-40a3-9e13-22716b43922f" alt="">
-                </figure>
+            {{ $advs := where site.RegularPages "Params.onTop" true  }}
+            {{ $advs = where $advs "Params.Draft" "!=" true  }}
+            {{ if (gt ($advs.Len) 0) }}
+                {{ $post := index ($advs) 0 }}
+                <article class="post-entry" style="background: transparent; border: none"> 
+                    <figure class="entry-cover">
+                        <img loading="lazy" src="{{ $post.Params.cover.image }}" alt="{{ $post.Title | plainify }}">
+                    </figure>
                     <div class="entry-content">
-                    <p>🟡 28-го октября, с 9:00 до 12:00 по мск, состоится онлайн семинар на тему «Усмирение беспокойного ума».</p>
+                        <p>{{ $post.Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
                     </div>
-                    <a class="entry-link" aria-label="post link to Усмирение беспокойного ума" href="http://localhost:1313/events/2024/%D1%83%D1%81%D0%BC%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B1%D0%B5%D1%81%D0%BF%D0%BE%D0%BA%D0%BE%D0%B9%D0%BD%D0%BE%D0%B3%D0%BE-%D1%83%D0%BC%D0%B0/"></a>
-            </article>
+                    <a class="entry-link" aria-label="post link to {{ $post.Title | plainify }}" href="{{ $post.Permalink }}"></a>
+                </article>
+            {{ end }}
         </div>
     </div>
 </article>
